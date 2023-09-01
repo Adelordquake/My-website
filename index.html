@@ -2,37 +2,219 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seagreen Official</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+<link rel="icon" href="mikiy.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <img src="rename.png" class="logo">
-            <nav>
-            <ul>
-                <li><a href="AboutAdeastreamsGlobal.html">About</a></li>
-                <li><a href="AdeastreamsGlobal.html">Back To Website</a></li>
-            </ul>
-        </nav>
-        </div>
-
-        <div class="content">
-            <a href="" class="btn">About Adeastreams Global</a>
-            <h1>Real Estate<br>And Facility Management Company</h1>
-            <p>Adeastreams Global is a one man company<br> owned by one and only MR A.D Wasiu,Founded<br> in 2023,Adeastreams Global  vision<br> is simple,To promote happiness and cost <br> through top services and shear honesty,<br>Adeastreams Global is a sure BANGER when it<br> comes to real estate and facility management and with such a<br>talented manager, FAILURE IS NOT AN OPTION </p>
+    <section id="banner">
+        <img src="rename.png" class="logo">
+        <div class="banner-text">
+            <h1>Adeastreams Global</h1>
+            <p1>We Are Into Real Estates And Facility Management</p1>
+            <div class="banner-btn">
+                <a href="AboutAdeastreamsGlobal.html"><span></span>Find Out</a>
+                <a href="AboutAdeastreamsGlobal.html"><span></span>Read More</a>
             </div>
         </div>
-        <img src="mydad.png" class="feature-img">
-        <div class="social-icons">
-            <a href="">FACEBOOK</a>
-            <a href="">INSTAGRAM</a>
-            <a href="">TWITTER</a>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="AboutAdeastreamsGlobal.html">ABOUT US</a></li>
+                <li><a href="#feature">FEAUTURE</a></li>
+                <li><a href="#aboutus">SERVICES</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#footer">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div id="menuBtn">
+            <img src="menu.png" id="menu">
+        </div>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    menu.src = "close.png";
+                }
+                else{
+                    sideNav.style.right ="-250px";
+                    menu.src = "menu.png";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+    });
+        </script>
+    </div>
+     <!--Features-->
+        
+     <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Real Estate Agents</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="feature-text">
+                         <p>AdeastreamsGlobal is home to one of the most skilled certified trained real estate agent providing you with the best experience when purchasing with us.</p>
+                    </div>
+                </div>
+                <h1>Get A Home</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="feature-text">
+                         <p>In AdeastreamsGlobal we believe in giving you and your family the best experience,Adeastreams believes in providing homes not houses,Here at AdeastreamsGlobal we are family.</p>
+                    </div>
+                </div>
+                <h1>Our Affordable Cost</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-money"></i>
+                    </div>
+                    <div class="feature-text">
+                         <p>AdeastreamsGlobal affordable and best prices for families and individuals is truely impeccable willing to give you the best homes at affordable prices and also  giving out discounts and offers to pay in installments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-img">
+                <img src="nigerians.webp">
+            </div>
+        </div>
+    </section>
+    <!--About Us-->
+
+    <section id="aboutus">
+        <div class="title-text">
+            <p>Services</p>
+            <h1>Adeastreams Global Info</h1>
+        </div>
+        <div class="aboutus-box">
+            <div class="founder-info">
+                <img src="house.jpg">
+                <div class="overlay"></div>
+                <div class="founder-desc">
+                    <h3>Buy Houses In Lekki ajaa</h3>
+                    <hr>
+                    <p>Houses in lekki aja are given discounts of up to 10% if u purchase with AdeastreamsGlobal</p>
+                </div>
+            </div>
+            <div class="founder-info">
+                <img src="homes-in-nigeria.jpg">
+                <div class="overlay"></div>
+                <div class="founder-desc">
+                <h3>Buy Houses In Ilupeju</h3>
+                    <hr>
+                    <p>Houses in lekki aja are given discounts of up to 5% if u purchase with AdeastreamsGlobal</p>
+                </div>
+            </div>
+            <div class="founder-info">
+                <img src="house4.jpg">
+                <div class="overlay"></div>
+                <div class="founder-desc">
+                <h3>Buy Houses In Festac</h3>
+                <hr>
+                <p>Houses in Fesac are given discounts of up to 15% if u purchase with AdeastreamsGlobal</p>
+                </div>
+            </div>
+            <div class="founder-info">
+                <img src="house5.webp">
+                <div class="overlay"></div>
+                <div class="founder-desc">
+                <h3>Buy Houses In Lekki</h3>
+                <hr>
+                <p>Houses in lekki aja are not given discounts if u purchase with AdeastreamsGlobal,BUT dont fret cause with Adeastreams global you can pay in insallments</p>
+            </div>
+           </div>
+        </div>
+    </section>
+<!--Testimonials-->
+<section id="testimonials">
+    <div class="title-text">
+        <p>TESTIMONIALS</p>
+        <h1>Reviews from Adeastreams Global clients</h1>
+    </div>
+    <div class="testimonial-row">
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="indi.avif">
+                <div class="user-info">
+                    <h4>Osas Rachel</h4>
+                    <small>@Osasrachel <c</i></small>
+                </div>
+            </div>
+            <p>Peak experience i had with AdeastreamsGlobal i was a student willing to get an affordable house near my institution and it all seemed imposible till i came accross their website i truely was spellbound when i saw the house not lacking in any factor bot electricity and water supply was given and the price affordable and of cource i took the offer to pay in installments with absolutely no pressure from AdeastreamsGlobal to pay quickly fantastic job AdeastreamsGlobal for sure you will hear from me again.</p>
+        </div>
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="peop.avif">
+                <div class="user-info">
+                    <h4>Keen Vicky</h4>
+                    <small>@Keenvicky<i class="fa fa-twitter"></i></small>
+                </div>
+            </div>
+            <p>Just phenomenal AdeastreamsGlobal just cant get any better than this truely the best experience for me and my family found our dream home in minuites not to talk about the agents,We were truely mesmorized by AdeastreamsGlobal estate agents giving their best to get us the best price on the house oh no a home cause with AdeastreamsGlobal they give homes not houses truely keep it up.</p>
+        </div>
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="iniii.avif">
+                <div class="user-info">
+                    <h4>Adelodun Maleeq</h4>
+                    <small>@Adelodunmaleeq<i class="fa fa-twitter"></i></small>
+                </div>
+            </div>
+            <p>Hats off to AdeastreamsGlobal i now have a mutual relationshit with this company it might just seem like bluffing but to be honest it's true AdeastreamsGlobal first came to me as a scam but when i got into it wow it was good the homes i got for me and my family was beautiful as a working man i really didn't spen a lot of time in the country but AdeastreamsGlobal took no advantage of the suituation putting out the work and effort to make sure the house given matched the specifications i gave them working their buts off just to give me and my family the best experience thank you AdeastreamsGlobal.</p>
+        </div> 
+    </div>
+</section>
+<!--footer-->
+<section id="footer">
+    <img src="madamgetty.png" class="footer-img">
+        <div class="title-text">
+            <p>Contact Us</p>
+            <h1>Buy Your Dream House Today</h1>
+        </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa fa-clock-o"></i>Monday to Saturday-8am to 9pm</p>
+            <p><i class="fa fa-clock-o"></i>Sunday-10am to 6pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Get In Touch With Our Certified Agents</h1>
+            <p>No30 ilupeju road,Lagos city<i class="fa fa-map-marker"></i></p>
+           <p>delordglobalinc@yahoo.com<i class="fa fa-paper-plane"></i></p>
+            <p>+234 8122993939 +234 8034750436<i class="fa fa-phone"></i></p>
         </div>
     </div>
+    <div class="social-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube-play"></i>
+        <p>Copyright Adeastreams Global Real Estate And Facility Management Company</p>
+    </div>
+</section>
 </body>
-</html>
+</html> 
